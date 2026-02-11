@@ -16,7 +16,7 @@ We chose **Option B: Win Rate Driver Analysis** as the foundation for building a
   - Negative drivers (e.g., Qualified stage, Partner leads, APAC/HealthTech industries) highlight weaknesses.
 
 - **Business Usefulness:**  
-  - Instead, it provides actionable insights for CROs and sales leaders to prioritize deals, adjust strategy, and improve qualification.
+  - It provides actionable insights for CROs and sales leaders to prioritize deals, adjust strategy, and improve qualification.
 
 ---
 
@@ -33,7 +33,7 @@ We chose **Option B: Win Rate Driver Analysis** as the foundation for building a
    - Ensure columns include: `industry`, `region`, `product_type`, `lead_source`, `deal_stage`, `sales_cycle_days`, `deal_amount`, `outcome`.
 
 3. **Run the Model:**
-   - Train logistic regression on historical deal data.  
+   - Train logistic regression on historical data.  
    - Save coefficients into a DataFrame called `importance`.
 
 4. **Visualize Drivers:**
@@ -58,7 +58,7 @@ We chose **Option B: Win Rate Driver Analysis** as the foundation for building a
 - **Model Choice:** Logistic regression was chosen over complex ML models because interpretability is more valuable than marginal accuracy gains.  
 - **Focus on Business Drivers:** We prioritized actionable insights (e.g., Qualified stage is a bottleneck) over predictive metrics.  
 - **Visualization:** Horizontal bar chart with color coding (blue = positive, orange = negative) makes drivers easy to interpret.  
-- **Alert System Design:** Instead of building a full production system, we designed a lightweight architecture (Part 4) that could be productized by ABC.  
+- **Alert System Design:** Instead of building a full production system, we designed a lightweight architecture (Part 4) that could be productized.  
 - **Reflection:** We acknowledged limitations (data quality, model drift, alert fatigue) and proposed next steps (qualification scoring, dashboard, feedback loop).
 
 ---
